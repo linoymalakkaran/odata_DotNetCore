@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extensions\MGSurveyModelBuilderExtensionsS.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MGSurvey.Business.Models\MGSurvey.Business.Models.csproj" />
+    <ProjectReference Include="..\MGSurvey.Data.Mapper\MGSurvey.Data.Mapper.csproj" />
+    <ProjectReference Include="..\MGSurvey.Domain.Entities\MGSurvey.Domain.Entities.csproj" />
+    <ProjectReference Include="..\MGSurvey.Utilities\MGSurvey.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
